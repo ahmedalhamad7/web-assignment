@@ -1,0 +1,206 @@
+/*to set background for all webpages*/
+html{
+  background-image: url("bg.jpg");
+}
+/*to set border style for the horizental line*/
+hr{
+  border-style: double;
+}
+/*to style the paragraphs for all the paragraphs within the content div*/
+.content p{
+  font-size: 16px;
+  font-family: Arial;
+  text-align: justify;
+}
+/*to set color for h2 heading*/
+h2{
+  color: darkblue;
+}
+/*to style the h3 heading for all webpages*/
+h3{
+  color: dodgerblue;
+  border: 2px solid Violet;
+  border-radius: 4px;
+  text-align: center;
+}
+/*to style the header div for all webpages*/
+.header {
+  background-color: rgba(255, 0, 0, 0.3);
+  height: auto;
+  padding: 10px 5px;
+}
+/*to style the h1 heading in the header div for all webpages*/
+.header h1{
+  color: darkblue;
+  font-style: oblique;
+  font-family: serif;
+  text-align: center;
+  text-shadow: 1px 1px black;
+}
+/*to set color for the paragraph in the header div*/
+.header p{
+  color: white;
+}
+/*to style the header for all webpages*/
+header{
+  height: auto;
+  width: auto;
+  text-align: left;
+  padding: 15px;
+}
+/*to style the navigation lists for the links to other webpages*/
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/*to style the navbar container */
+nav {
+  overflow: hidden;
+  text-align: center;
+  align-content: center;
+  height: auto;
+  width: auto;
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(0, 0, 0,0.4);
+}
+
+/* to style tha navbar links */
+nav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* to style the a element (Links) to change color on hover */
+nav a:hover {
+  background-color: #ddd;
+  color: red;
+}
+/*to style the section for all webpages*/
+section{
+  height: auto;
+  width: auto;
+  padding-bottom: 100px;
+}
+/*to style main element for all webpages*/
+main{
+  height: auto;
+  width: auto;
+  padding-bottom: 100px;
+}
+/*to style heading h5 element*/
+h5 {
+  text-decoration: underline;
+}
+/*to style the footer for all webpages*/
+footer{
+  position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+/*to style the footer lists for the links to the about me and contact pages*/
+footer ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* to style tha footer links */
+footer a{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* to style the a element (Links) to change color on hover */
+footer a:hover{
+  background-color: #ddd;
+  color: red;
+}
+/* to style the contact div */
+.contact{
+padding: 50px;
+}
+/* to style the input element */
+input[type=text], input[type=email], textarea{
+  padding: 12px 20px;
+  width: 50%;
+  font-size: 0.85rem;
+}
+/* to style the cards div */
+.cards{
+  display: flex;
+
+}
+/* to style the first and second card div */
+.c1 .c2{
+  width:45%;
+  justify-content:space-evenly;
+  justify-content: center;
+  padding: 10px 20px;
+}
+/* to set a margin-right for first card */
+.c1{
+  margin-right: 20px;
+}
+/* to set a margin-left for second card */
+.c2{
+  margin-left: 20px;
+}
+/* to style the aboutme div*/
+.aboutme {
+  overflow: hidden;
+  text-align: center;
+  align-content: center;
+  height: auto;
+  width: auto;
+  text-align: center;
+  padding: 15px;
+}
+/* media queries to make the webpage functional when changing screen size */
+@media screen and (max-width: 600px) {
+  nav a {
+    float: none;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+  }
+  .cards{
+    float: none;
+    width: 100%;
+    display:block;
+    justify-content: center;
+    text-align: justify;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+  }
+  .c1 {
+    float: none;
+    width: 75%;
+    display: block;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+  .c2{
+    float: none;
+    width: 75%;
+    display: block;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    text-align:center;
+  }
+}
